@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1% 8% 0 ;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.logo{
+    display: inline-flex;
+    margin: auto;
+}
+.logo-name{
+    padding-left:5px ;
+}
+.logo-img{
+    width: 30px;
+  
+}
+.navbar{
+    width: 100%;
+    display:flex;
+    text-align: center;
+    line-height: 20px;
+    margin:auto;
+}
+#menulist{
+    display: none;
+}
+nav ul li{  
+    margin-right: 30px;
+    list-style: none;
+    display: inline-block; 
+}
+nav{
+    flex: 1;
+    text-align: right;
+    margin: auto;
+}
+#navList a{
+    text-decoration: none;
+    color: rgb(56, 35, 35);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1::after{
+    content: "";
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#a1103a, #300401);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-1 h1{
+    font-size: 75px;
+}
+.col-1 h4 {
+    font-size: 30px;
+    color: #474747;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p {
+    font-size: 18px;
+    color: #070707;
+    font-weight: 100;
+}
+.col-1 h3 {
+    margin: 30px 0;
+    font-size: 20px;
+}
+.col-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .drinks-img{
+    position: relative;
+    width: 92%;
+}
+.color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#964242, #551510);
+    border-radius: 20px 0 0 20px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+.add-btn {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.add-btn img {
+    width: 50px;
+    margin-bottom: 2px;
+}
+
+.order-btn {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #a51919, #500601);
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.order-btn img{
+    width: 30px;
+    display: none;
+}
+.order-btn:hover img{
+    display: block;
+}
+.order-btn:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form{
+    color: #500601;
+}
+form p{
+    margin: 20px;
+    font-weight: 600;
+    
+}
+form button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #a51919, #500601);
+    border-radius: 4rem;
+    cursor: pointer;
+    margin:20px 0;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: extra-expanded;
+    
+}
+fieldset{
+    box-sizing: border-box;
+    width:auto; 
+    text-align: center;
+    border: 2px double #a51919;
+    margin: 50px;
+}
+input{
+    width: 300px;
+    height: 50px;
+    color: #a51919;
+    border:3px solid #a51919;
+    margin: 30px 0;
+    border-radius: 4rem;
+    text-align: center;
+    outline:  #a51919;
+    font-size: 16px;
+}
+input::placeholder{
+    color: rgba(165, 25, 25, 0.5);
+    font-size: 16px;
+    font-style: italic;
+
+}
+textarea{
+    height: 200px;
+    width: 300px;
+    border:3px solid #a51919;
+    border-radius: 2rem;
+    outline:  #a51919;
+    color: rgb(165, 25, 25);
+    font-size: 16px;
+    padding: 20px 10px;
+}
+textarea::placeholder{
+    color: rgba(165, 25, 25, 0.5);
+    font-size: 16px;
+    font-style: italic;
+}
+footer{
+    color: white;
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(#964242, #551510);
+}
+@media screen and (max-width:767px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        padding: 2%;
+    }
+    
+    #menulist{
+        display: block;
+        justify-content: right;
+        cursor: pointer;
+    }
+    #menulist img{
+        width: 30px;
+        
+    }
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#96424293, #55151098);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 2;
+        margin: 0 ;
+        padding: 0;
+        transition: 0.5s ease-in;
+    }
+    nav ul li{
+        display: grid;
+        margin: 0px;
+    }
+    #navList a{
+        color: white;
+        margin: 10px;
+        font-size: 14px;
+    }
+    .row{
+        display: grid;
+        margin: 20px;
+    }
+    .col-1{
+        width: 50%;
+    }
+    .col-2{
+        width: 70%;
+        right: -10%;
+        margin-bottom: 100px;
+    }
+    .col-2 .drinks-img {
+        width: 92%;
+        padding-left: 4em;
+    }
+    .color-box{
+        
+        
+        margin-bottom: 100px;
+    }
+}

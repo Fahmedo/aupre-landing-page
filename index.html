@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="images/ox-2 (1).svg" type="image/png" rel="icon">
+    <title>Aupre juice</title>
+    <link rel="stylesheet" href="styleesheet.css">
+</head>
+<body>
+    <section>
+        <main>
+            <div class="navbar"> 
+                    <div class="logo">
+                        <img src="images/ox-2 (1).svg" alt="logo" class="logo-img">
+                        <h2 class="logo-name">aupre</h2>
+                    </div>
+                <nav>
+                    
+                    <ul id="navList">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"> Testimonial</a></li>
+                        
+                    </ul>
+                </nav>
+                <div id="menulist">
+                    <img src="images/menu.png" alt="mobile-menulist" onclick="toggleMenu()">
+                </div>
+            </div>
+            <section class="content">
+                <div class="row">
+                    <div class="col-1">
+                        <h1>aupre.</h1>
+                        <h4>Cold Pressed Juice</h4>
+                        <p>Made from specially hand-picked fruits with no added sugars and preservatives.</p>
+                        <h3>$14.99</h3>
+                        <button class="order-btn">Order Now
+                            <img src="images/arrow.png" alt="arrow" class="arrow-img">
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/aupre.png" alt="apure-image" class="drinks-img">
+                        <div class="color-box"></div>
+                        <div class="add-btn">
+                            <img src="images/add.png" alt="add" class="add-img">
+                            <p><small>Add to Cart</small></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>  <!-- Content section -->
+
+            <section class="form">
+                <center>
+                    <form action="">
+                        <fieldset>
+                            <legend>Feed Back</legend>
+                            <!-- <p>Email</p> -->
+                            <input type="email" name="text" placeholder="yourmail@gmail.com"><br>
+                            <!-- <p>Comments</p> -->
+                            <textarea name="message" placeholder="comments....."></textarea>
+                            <br>
+                            <button type="submit"> submite</button>
+                        </fieldset>
+                    </form>
+                </center>
+                
+            </section>  <!-- Form section -->
+        </main>
+    </section> <!-- Main section -->
+    <footer>
+    
+    </footer>
+<!-- script js -->
+    <script>
+        var menuList= document.getElementById(navList);
+        menuList.style.maxHeight = '0px';
+        function toggleMenu()
+        {
+            if( navList.style.maxHeight == "0px")
+            {
+                navList.style.maxHeight = '250px';
+            }
+            else{
+                navList.style.maxHeight ="0px";
+            }
+        }
+    </script>
+</body>
+</html>
